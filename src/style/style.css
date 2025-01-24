@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /*  */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 black, /* Bayangan di kiri atas */ 1px -1px 0 black, /* Bayangan di kanan atas */ -1px 1px 0 black, /* Bayangan di kiri bawah */ 1px 1px 0 black; /* Bayangan di kanan bawah */
+}
+
+header nav ul li a:active {
+  color: blue;
+}
+
+header nav ul li a.clicked {
+  color: blue;
+}
+
+body section#home {
+  background-image: url('https://danieltdl.github.io/P3L/src/img/server.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding-left: 3rem;
+}
+
+body section#home .text-content-home {
+  transform: translate(2%, 150%);
+  width: 80%;
+}
+
+body section#home .text-content-home h1,
+body section#home .text-content-home h4 {
+  color: #ffffff;
+  text-shadow: 2px 2px 1px black;
+  font-size: 26px;
+  width: 80%;
+}
+
+body section#home .text-content-home h1#company-name {
+  border-bottom: 8px solid yellow;
+  display: inline-block;
+  width: 430px;
+}
+
+body section#home .text-content-home h4#company-info {
+  font-size: 64px;
+}
+
+body section#home .text-content-home p {
+  color: #ffffff;
+  text-shadow: 2px 2px 1px black;
+}
+
+body section#about {
+  gap: 90px;
+  background-color: #000080;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body section#about .text-content-about {
+  width: 60%;
+  /* border: 1px solid #fff; */
+}
+
+body section#about .text-content-about h1 {
+  font-size: 40px;
+  color: #ffffff;
+  border-bottom: 14px solid yellow;
+  display: inline-block;
+}
+
+body section#about .text-content-about p {
+  line-height: 40px;
+  font-size: 19px;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+body section#about .company-logo img {
+  width: 450px;
+  border-radius: 20%;
+}
+
+body section#produk {
+  height: 130vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+body section#produk ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  list-style-type: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 110vh;
+}
+
+body section#produk ul li {
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+}
+
+body section#produk ul li .card-produk {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #e2e4f3;
+  border-radius: 15px;
+}
+
+body section#produk ul li .card-produk i {
+  height: 1px;
+}
+
+body section#produk .content-produk h2,
+body section#produk .content-produk p {
+  text-align: center;
+}
+
+body section#produk .content-produk h2#produk-judul {
+  border-bottom: 14px solid yellow;
+  display: inline;
+  margin-left: 627px;
+}
+
+body section#produk .content-produk p#layanan-judul {
+  margin-top: 10px;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 2rem;
+  background-color: #000080;
+}
+
+footer .container-form {
+  width: 50%;
+  padding: 10px;
+}
+
+footer .container-form h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+footer .container-form form ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .container-form form ul li#name-input {
+  padding-left: 20px;
+  width: 90%;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+footer .container-form form ul li#name-input input {
+  width: 48%;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+footer .container-form form ul li {
+  padding: 1px;
+  width: 90%;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+footer .container-form form ul li input {
+  width: 97%;
+  text-align: center;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+footer .container-form form ul li#button-container {
+  display: flex;
+  justify-content: center;
+}
+
+footer .container-contact {
+  width: 50%;
+  /* border: 1px solid #ff0000; */
+}
+
+footer .container-contact ul {
+  list-style-type: none;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+footer .container-contact ul li label {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+footer .container-contact ul li p {
+  font-size: 24px;
+  color: #ffffff;
+}

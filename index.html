@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <link rel="icon" type="image/png" sizes="64x64" href="src/img/favicon3-64.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon3-64.png" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <!-- style css -->
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/1fb7bc7f11.js" crossorigin="anonymous"></script>
+    <!-- icon -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="">
+          <img src="./src/img/favicon2-64.png" alt="" />
+        </a>
+        <ul>
+          <li><a href="#home" class="nav-link">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+          <li><a href="#produk" class="nav-link">Produk & Service</a></li>
+          <li><a href="#contact" class="nav-link">Hubungi</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="text-content-home">
+          <h1 id="company-name">PT. RUANG KREASI SWARA DHIKA</h1>
+          <h4 id="company-info">COMPANY PROFILE</h4>
+          <p>Perusahaan yang berfokus pada pengembangan solusi di bidang teknologi informasi</p>
+        </div>
+      </section>
+      <section id="about">
+        <div class="company-logo">
+          <img src="./src/img/logo.png" alt="logo" />
+        </div>
+        <div class="text-content-about">
+          <h1>Tentang Kami</h1>
+          <p>
+            PT. Ruang Kreasi Swara Dhika adalah perusahaan yang berfokus pada pengembangan solusi di bidang teknologi informasi. Kami menawarkan layanan yang beragam dan inovatif untuk mendukung kebutuhan
+            teknologi bagi bisnis dari berbagai sektor, khususnya UKM. Dengan pengalaman kami dalam menciptakan berbagai solusi teknologi, kami bertujuan untuk membantu perusahaan mengoptimalkan operasional,
+            meningkatkan efisiensi, dan meraih kesuksesan melalui penerapan teknologi yang tepat guna
+          </p>
+        </div>
+      </section>
+      <section id="produk">
+        <div class="content-produk">
+          <div class="h2-p">
+            <h2 id="produk-judul">Produk & Service</h2>
+            <p id="layanan-judul">Layanan Yang Kami Tawarkan</p>
+          </div>
+          <div class="produk-list">
+            <ul>
+              <li>
+                <div class="card-produk">
+                  <i class="fa-solid fa-cloud-arrow-up fa-2xl"></i>
+                  <h3>Cloud Service</h3>
+                  <p>Layanan cloud meliputi hosting, app run, dan cloud engine.</p>
+                </div>
+              </li>
+              <li>
+                <div class="card-produk">
+                  <i class="fa-solid fa-laptop-code fa-2xl"></i>
+                  <h3>Website</h3>
+                  <p>Pembuatan aplikasi berbasis Website skala kecil dan industri.</p>
+                </div>
+              </li>
+              <li>
+                <div class="card-produk">
+                  <i class="fa-solid fa-mobile-screen fa-2xl"></i>
+                  <h3>Mobile App</h3>
+                  <p>Pembuatan aplikasi berbasis perangkat mobile Android skala menengah.</p>
+                </div>
+              </li>
+              <li>
+                <div class="card-produk">
+                  <i class="fa-solid fa-desktop fa-2xl"></i>
+                  <h3>Desktop App</h3>
+                  <p>Pembuatan aplikasi berbasis Desktop skala kecil dan industri</p>
+                </div>
+              </li>
+              <li>
+                <div class="card-produk">
+                  <i class="fa-solid fa-user-tie fa-2xl"></i>
+                  <h3>IT Consultant</h3>
+                  <p>Layanan konsultasi seputar teknologi informasi skala kecil dan menengah</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="container-form">
+        <h3>Message Us</h3>
+        <form action="">
+          <ul>
+            <li id="name-input">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </li>
+            <li>
+              <input type="email" placeholder="example@mail.com" />
+            </li>
+            <li id="message">
+              <input type="text" placeholder="Your Message" style="height: 6rem; border-radius: 5px; outline: none; border: none" />
+            </li>
+            <li id="button-container">
+              <button type="submit">SEND</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="container-contact">
+        <ul>
+          <li>
+            <label>Call Us</label>
+            <p>+62 812-8538-8206</p>
+          </li>
+          <li>
+            <label>Email Us</label>
+            <p>ruangkreasiswaradhika@gmail.com</p>
+          </li>
+          <li>
+            <label>Visit Us</label>
+            <p>Perumahan Telaga Mas Blok L No.7</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="/src/script/script.js"></script>
+  </body>
+</html>
